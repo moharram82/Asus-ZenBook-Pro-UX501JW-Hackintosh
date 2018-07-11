@@ -78,7 +78,7 @@ Detailed bios settings for the working machine:
     - Network Stack [Disabled]
 
 ### Boot menu
-- Launch CSM [Enabled], it does not matter if enabled or disabled except for the CLOVER boot menu resolution, to get higher resolution set this option to disabled without installing `CsmVideoDxe-64.efi` driver.
+- Launch CSM [Enabled], it does not matter if enabled or disabled except for the CLOVER boot menu resolutions, to get higher resolutions set this option to disabled without installing `CsmVideoDxe-64.efi` driver.
 
 ### Security menu
 - I/O Interface Security
