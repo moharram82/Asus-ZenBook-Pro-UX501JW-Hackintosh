@@ -42,7 +42,7 @@ The following resulted from my own work (with the help of other people in this c
 - Battery info
 
 ### Working with bugs
-- Full QE/CI for Intel HD4600 @3820x2160 with screen flickering badly.
+- Full QE/CI for Intel HD4600 @3840x2160 with screen flickering badly.
 - Audio 3.5mm jack: if you experience any noise when using a headset just open System Preferences > Sound > Input, and switch from the Internal Microphone (Built-In) to the Line In (Audio line-in port) and the noise will disappear immediately, sometimes you need to keep the System Preferences window open on the Sound > Input panel in order to keep the noise off.
 
 ### Not working
