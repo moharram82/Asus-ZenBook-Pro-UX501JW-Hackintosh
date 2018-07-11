@@ -14,7 +14,7 @@ This repo was created to help the owners of the same laptop model with the same 
     - NVIDIA GeForce GTX 960M 2GB
 - **Storage:** SSD (PCIE x4) 512GB
 - **Audio Codec:** ALC668
-- **Wireless/BT:** replaced the original Intel one with [AzureWave AW-CE123H](https://www.amazon.com/dp/B00HRFS1GQ/ref=psdc_13983731_t1_B00JY6X9HM)
+- **Wireless/BT:** replaced the original (Intel Wireless-AC 7260) with [AzureWave AW-CE123H](https://www.amazon.com/dp/B00HRFS1GQ/ref=psdc_13983731_t1_B00JY6X9HM)
 - **Interfaces:**
     - 3 USB 3.0 ports
     - Audio combo jack
@@ -27,7 +27,7 @@ This repo was created to help the owners of the same laptop model with the same 
 The following resulted from my own work (with the help of other people in this community) on installing High Sierra on this laptop model, but it does not mean it is the final results, so if you discovered a better way to fix some of the issues be my guest and create an issue.
 
 ### Working
-- Full QE/CI for Intel HD4600 (NVIDIA GPU will be disabled)
+- Full QE/CI for Intel HD4600 @1920x1080 (NVIDIA GPU will be disabled)
 - Audio (internal speakers with key control / 3.5mm jack / Internal Microphone)
 - WIFI & BT (handoff, universal clipboard, cellular calls, SMS and MMS)
 - Keyboard (with backlight control)
@@ -42,6 +42,7 @@ The following resulted from my own work (with the help of other people in this c
 - Battery info
 
 ### Working with bugs
+- Full QE/CI for Intel HD4600 @3820x2160 with screen flickering badly.
 - Audio 3.5mm jack: if you experience any noise when using a headset just open System Preferences > Sound > Input, and switch from the Internal Microphone (Built-In) to the Line In (Audio line-in port) and the noise will disappear immediately, sometimes you need to keep the System Preferences window open on the Sound > Input panel in order to keep the noise off.
 
 ### Not working
@@ -53,7 +54,7 @@ The following resulted from my own work (with the help of other people in this c
 - SD card reader (experimental kext loaded but not tested)
 
 ## Bios Settings
-This is a detailed bios settings as per my laptop:
+Detailed bios settings for the working machine:
 
 ### Advanced menu
 - Internal Pointing Device [Enabled]
@@ -77,7 +78,7 @@ This is a detailed bios settings as per my laptop:
     - Network Stack [Disabled]
 
 ### Boot menu
-- Launch CSM [Enabled]
+- Launch CSM [Enabled], it does not matter if enabled or disabled except for the CLOVER boot menu resolution, to get higher resolution set this option to disabled without installing `CsmVideoDxe-64.efi` driver.
 
 ### Security menu
 - I/O Interface Security
